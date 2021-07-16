@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Alexeysvk.github.io/team-project-group21",
+  "homepage": "https://DavidKasparyans.github.io/team-project-group21",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /team-project-group21/"
