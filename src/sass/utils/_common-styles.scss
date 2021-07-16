@@ -9,7 +9,7 @@
   body {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: 0.04em;
-    background-color: $white;
+    background-color: var(--background-white);
   }
   
   h1,
@@ -20,7 +20,7 @@
   h6 {
     margin-bottom: 0;
     margin-top: 0;
-    color: $accent-color;
+    color: var(--text-color-black);
   }
   
   p {
