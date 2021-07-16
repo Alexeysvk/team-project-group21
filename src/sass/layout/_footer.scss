@@ -1,0 +1,31 @@
+.footer-container{
+    display: flex;
+}
+.footer-icons__list{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.footer-icons__link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--text-color-white);
+    
+    &:hover,
+    &:active{
+        fill: var(--text-color-white);
+        background: var(--title-color);
+        border-radius: 50%;
+    }
+}
+.footer-icons__content:not(:last-child){
+    margin-right: 25px;
+}
+
+.footer-title{
+    margin-left: 114px;
+}
