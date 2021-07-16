@@ -6,20 +6,42 @@
     padding: 0;
   }
   
-  .titleNone {
-    display: none;
+  body {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.04em;
+    background-color: $white;
   }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: $accent-color;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
   img {
     display: block;
     max-width: 100%;
     height: auto;
-  }
-  body {
-    background-color: var(--background-white);
-    color: var(--text-color-black);
-    font-family: "DM Sans", "Titan One", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    overflow-x: hidden;
   }
