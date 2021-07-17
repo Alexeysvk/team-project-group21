@@ -404,4 +404,55 @@ summary {
 .footer-title {
   margin-left: 114px;
 }
+
+.page-header {
+  background-color: var(--background-pink);
+  width: 100%;
+  top: 0;
+  z-index: 500;
+}
+
+.navigation {
+  display: none;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu-button {
+  z-index: 1100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.hero {
+  background-color: var(--background-pink);
+}
+
+.hero-container {
+  min-width: 320px;
+  padding: 83px 20px 0;
+  overflow-x: hidden;
+}
+
+.hero-numbers {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */

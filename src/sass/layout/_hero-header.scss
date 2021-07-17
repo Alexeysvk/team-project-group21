@@ -1,0 +1,37 @@
+.page-header {
+  background-color: var(--background-pink);
+  // position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 500;
+}
+.navigation {
+  display: none;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu-button {
+  z-index: 1100;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+.hero {
+  background-color: var(--background-pink);
+}
+.hero-container {
+  min-width: 320px;
+  padding: 83px 20px 0;
+  overflow-x: hidden;
+}
+.hero-numbers {
+  display: none;
+}
