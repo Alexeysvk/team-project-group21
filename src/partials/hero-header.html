@@ -89,14 +89,37 @@
             <img
               class="hero-card__image"
               src="./images/hero-header/milk_768px_1x-min.png"
-              alt="icecream"
+              alt="milk"
               loading="lazy"
           /></picture>
-          <p class="hero-card__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-          </p>
-          <a href="#" class="hero-link"></a>
+          <div>
+            <p class="hero-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
+            <a href="#" class="hero-card__link"
+              ><picture>
+                <source
+                  srcset="
+                    /images/hero-header/arrow-right-1280-1x-min.png 1x,
+                    /images/hero-header/arrow-right-1280-2x-min.png 2x
+                  "
+                  media="(min-width: 1280px)" />
+
+                <source
+                  srcset="
+                    /images/hero-header/arrow-right-768-1x-min.png 1x,
+                    /images/hero-header/arrow-right-768-2x-min.png 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <img
+                  src="./images/hero-header/arrow-right-1280-1x-min.png"
+                  alt="link"
+                  loading="lazy"
+              /></picture>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -137,6 +160,25 @@
       <div class="hero-numbers__block">
         <p class="hero-numbers__quantity">23</p>
         <p class="hero-numbers__item">food trucks</p>
+      </div>
+      <div class="hero-numbers__image">
+        <picture>
+          <source
+            srcset="
+              /images/hero-header/girl_1280px_1x-min.png 1x,
+              /images/hero-header/girl_1280px_2x-min.png 2x
+            "
+            media="(min-width: 1280px)" />
+
+          <source
+            srcset="
+              /images/hero-header/girl_768px_1x-min.png 1x,
+              /images/hero-header/girl_768px_2x-min.png 2x
+            "
+            media="(min-width: 768px)" />
+
+          <img src="./images/hero-header/girl_1280px_2x-min.png" alt="link" loading="lazy"
+        /></picture>
       </div>
     </div>
   </div>

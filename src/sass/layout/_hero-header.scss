@@ -149,6 +149,11 @@
   color: var(--title-color);
   background-color: var(--text-color-white);
 }
+.hero-card {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 .hero-card__content {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -178,15 +183,19 @@
   }
   color: var(--text-color-white);
   font-weight: 400;
+  margin-bottom: 0;
 }
-.hero-numbers {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    margin-top: 60px;
-    position: relative;
+.hero-card__link {
+  @media screen and (max-width: 1279px) {
+    width: 18px;
+    height: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
   }
 }
+
 .hero__image {
   border-radius: 50%;
   background-color: #ffa5ba;
@@ -217,5 +226,13 @@
   @media screen and (min-width: 768px) {
     width: 143px;
     height: 336px;
+  }
+}
+.hero-numbers {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-top: 60px;
+    position: relative;
   }
 }
