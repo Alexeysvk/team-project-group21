@@ -50,6 +50,34 @@
         </li>
       </ul>
     </div>
+    <div class="hero__image">
+      <picture>
+        <source
+          srcset="
+            /images/hero-header/ice-cream_320px_1x-min.png 1x,
+            /images/hero-header/ice-cream_320px_2x-min.png 2x
+          "
+          media="(min-width: 320px)" />
+        <source
+          srcset="
+            /images/hero-header/ice-cream_1280px_1x-min.png 1x,
+            /images/hero-header/ice-cream_1280px_2x-min.png 2x
+          "
+          media="(min-width: 1280px)" />
+        <source
+          srcset="
+            /images/hero-header/ice-cream_768px_1x-min.png 1x,
+            /images/hero-header/ice-cream_768px_2x-min.png 2x
+          "
+          media="(min-width: 768px)" />
+
+        <img
+          class="hero__icecream"
+          src="./images/hero-header/ice-cream_320px_1x-min.png"
+          alt="icecream"
+          loading="lazy"
+      /></picture>
+    </div>
     <div class="hero-numbers">
       <div class="hero-numbers__block">
         <p class="hero-numbers__quantity">16</p>
