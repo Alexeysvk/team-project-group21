@@ -1,26 +1,26 @@
 :root {
-  --background-white: #E5E5E5;
-  --background-pink: #FFB8CA;
-  --background-milk: #FFF5F6;
-  --text-color-white: #FFFFFF;
+  --background-white: #e5e5e5;
+  --background-pink: #ffb8ca;
+  --background-milk: #fff5f6;
+  --text-color-white: #ffffff;
   --text-color-black: #000000;
-  --text-tel-color-grey: #907E82;
-  --title-color: #D41443;
-  --circle-color: #FFA5BA;
-  --white-buttons-hover-color: #ECEBEB;
-  --dark-button-hero-hover-color: #C7133E;
-  --icons-bacground-color: #FEA5BB;
-  --cafe-bg-color: #F0D1A5;
-  --food-truck-bg-color: #C2E297;
-  --footer-dark-button: #D41342;
-  --tablet-tel-menu-bg-color: #E17992;
+  --text-tel-color-grey: #907e82;
+  --title-color: #d41443;
+  --circle-color: #ffa5ba;
+  --white-buttons-hover-color: #ecebeb;
+  --dark-button-hero-hover-color: #c7133e;
+  --icons-bacground-color: #fea5bb;
+  --cafe-bg-color: #f0d1a5;
+  --food-truck-bg-color: #c2e297;
+  --footer-dark-button: #d41342;
+  --tablet-tel-menu-bg-color: #e17992;
 }
 
 * {
   text-decoration: none;
   list-style-type: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -100,7 +100,7 @@ Use a better box model (opinionated).
 ::before,
 ::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -109,7 +109,7 @@ Use a more readable tab size (opinionated).
 html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 /**
@@ -138,7 +138,8 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 /*
@@ -165,7 +166,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -184,7 +185,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -368,11 +369,11 @@ summary {
 .footer-icons__list {
   display: inline-block;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .footer-icons__link {
@@ -382,16 +383,17 @@ summary {
   width: 44px;
   height: 44px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 50%;
   color: var(--text-color-white);
 }
 
-.footer-icons__link:hover, .footer-icons__link:active {
+.footer-icons__link:hover,
+.footer-icons__link:active {
   fill: var(--text-color-white);
   background: var(--title-color);
   border-radius: 50%;
