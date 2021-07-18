@@ -69,6 +69,36 @@
           <button class="hero__button hero__button--white">How it’s made?</button>
         </li>
       </ul>
+      <div class="hero-card">
+        <div class="hero-card__content">
+          <picture>
+            <source
+              srcset="
+                /images/hero-header/milk_1280px_1x-min.png 1x,
+                /images/hero-header/milk_1280px_2x-min.png 2x
+              "
+              media="(min-width: 1280px)" />
+
+            <source
+              srcset="
+                /images/hero-header/milk_768px_1x-min.png 1x,
+                /images/hero-header/milk_768px_2x-min.png 2x
+              "
+              media="(min-width: 768px)" />
+
+            <img
+              class="hero-card__image"
+              src="./images/hero-header/milk_768px_1x-min.png"
+              alt="icecream"
+              loading="lazy"
+          /></picture>
+          <p class="hero-card__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <a href="#" class="hero-link"></a>
+        </div>
+      </div>
     </div>
     <div class="hero__image">
       <picture>
@@ -108,10 +138,6 @@
         <p class="hero-numbers__quantity">23</p>
         <p class="hero-numbers__item">food trucks</p>
       </div>
-      <p class="hero-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
     </div>
   </div>
 </section>
