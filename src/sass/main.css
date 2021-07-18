@@ -431,6 +431,21 @@ summary {
   padding-right: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-container {
+    padding-top: 37px;
+  }
+}
+
+.button-burger {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .menu-button {
   z-index: 1100;
   display: -webkit-box;
@@ -440,6 +455,43 @@ summary {
   margin: 0;
   border: 0;
   background-color: transparent;
+}
+
+.header-buy__button {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 160px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.286;
+  color: #d41443;
+  background-color: #fff;
+  border: transparent;
+  border-radius: 22px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .header-buy__button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header-buy__button {
+    margin-left: 20px;
+  }
+}
+
+.header-buy__icon {
+  margin-left: 8px;
 }
 
 .hero {
@@ -582,12 +634,27 @@ summary {
   }
 }
 
-@media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero__image {
     width: 324px;
     height: 322px;
     padding-top: 32px;
     padding-left: 71px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__icecream {
+    width: 171px;
+    height: 410px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__icecream {
+    width: 143px;
+    height: 336px;
   }
 }
 /*# sourceMappingURL=main.css.map */
