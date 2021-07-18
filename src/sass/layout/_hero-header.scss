@@ -77,6 +77,12 @@
     min-height: 106px;
     font-size: 26px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 162px;
+    min-height: 80px;
+    font-size: 22px;
+  }
+
   @media screen and (max-width: 1279px) {
     margin: 0 0 20px;
   }
@@ -139,6 +145,11 @@
 }
 .hero-numbers {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-top: 60px;
+    position: relative;
+  }
 }
 .hero__image {
   border-radius: 50%;

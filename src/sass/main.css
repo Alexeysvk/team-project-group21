@@ -520,6 +520,14 @@ summary {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero__title {
+    width: 162px;
+    min-height: 80px;
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 1279px) {
   .hero__title {
     margin: 0 0 20px;
@@ -610,6 +618,14 @@ summary {
 
 .hero-numbers {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-numbers {
+    display: block;
+    margin-top: 60px;
+    position: relative;
+  }
 }
 
 .hero__image {
