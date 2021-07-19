@@ -1,8 +1,8 @@
 :root {
-  --background-white: #E5E5E5;
-  --background-pink: #FFB8CA;
-  --background-milk: #FFF5F6;
-  --text-color-white: #FFFFFF;
+  --background-white: #e5e5e5;
+  --background-pink: #ffb8ca;
+  --background-milk: #fff5f6;
+  --text-color-white: #ffffff;
   --text-color-black: #000000;
   --text-tel-color-grey: #907E82;
   --title-color: #D41443;
@@ -21,7 +21,7 @@
   text-decoration: none;
   list-style-type: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -105,7 +105,7 @@ Use a better box model (opinionated).
 ::before,
 ::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -114,7 +114,7 @@ Use a more readable tab size (opinionated).
 html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 /**
@@ -143,7 +143,8 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 /*
@@ -170,7 +171,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -189,7 +190,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -567,6 +568,7 @@ summary {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+
       -ms-flex-align: center;
           align-items: center;
   padding-top: 6px;
@@ -656,9 +658,10 @@ summary {
 .header-buy__button {
   position: relative;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
+=======
       -ms-flex-align: center;
           align-items: center;
   width: 160px;
