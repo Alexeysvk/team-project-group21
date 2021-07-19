@@ -427,8 +427,8 @@
     height: 100vh;
     top: 0;
     right: 0;
-    // opacity: 0;
-    // visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     background-color: var(--tablet-tel-menu-bg-color);
     width: 250px;
     padding-top: 60px;
@@ -478,4 +478,8 @@
 }
 .icon-close {
   background-color: transparent;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
 }
