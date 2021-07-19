@@ -94,11 +94,16 @@
   &:focus {
     background-color: var(--white-buttons-hover-color);
   }
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-left: 20px;
+  }
+}
+.header-buy__button--hidden {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 .header-buy__icon {
@@ -418,11 +423,12 @@
   @media screen and (max-width: 1279px) {
     z-index: 800;
     position: fixed;
+    // position: absolute;
     height: 100vh;
     top: 0;
     right: 0;
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     background-color: var(--tablet-tel-menu-bg-color);
     width: 250px;
     padding-top: 60px;
@@ -432,6 +438,9 @@
   @media screen and (max-width: 1279px) and (min-width: 768px) and (max-width: 1279px) {
     padding-left: 24px;
     padding-right: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
 
@@ -455,4 +464,18 @@
   &:focus {
     color: var(--title-color);
   }
+}
+.menu__link--current {
+  color: var(--title-color);
+}
+.menu__close {
+  position: absolute;
+  left: 80%;
+
+  bottom: 90%;
+  background-color: transparent;
+  border: none;
+}
+.icon-close {
+  background-color: transparent;
 }
