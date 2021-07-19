@@ -1,0 +1,395 @@
+.page-header {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.navigation {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 46px;
+  }
+}
+.nav-flex {
+  display: inline-flex;
+  align-items: center;
+  z-index: 1;
+}
+.nav__list {
+  @media screen and (min-width: 1280px) {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    margin: 0 110px;
+  }
+}
+.nav__item {
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+}
+.nav__link {
+  @media screen and (min-width: 1280px) {
+    color: var(--text-color-white);
+    &:hover,
+    &:focus {
+      color: var(--title-color);
+    }
+  }
+}
+.nav__link--current {
+  color: var(--title-color);
+}
+.button-burger {
+  display: inline-flex;
+  align-items: center;
+}
+.menu-button {
+  z-index: 1100;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.header-buy__button {
+  position: relative;
+  //   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.286;
+  color: #d41443;
+  background-color: #fff;
+  border: transparent;
+  border-radius: 22px;
+  outline: none;
+
+  cursor: pointer;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 20px;
+  }
+}
+.header-buy__icon {
+  margin-left: 8px;
+}
+.hero {
+  background-color: var(--background-pink);
+}
+.hero-container {
+  position: relative;
+  @media screen and (max-width: 767px) {
+    min-width: 320px;
+    padding: 83px 20px 0;
+    overflow-x: hidden;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 768px;
+    min-height: 400px;
+    padding: 32px 34px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    min-height: 665px;
+    padding: 52px 77px 0;
+  }
+}
+.hero-content {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 37%;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-top: 70px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 40px;
+  }
+}
+.hero__title {
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-color-white);
+  @media screen and (max-width: 767px) {
+    width: 218px;
+    min-height: 106px;
+    font-size: 26px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 162px;
+    min-height: 80px;
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    margin: 0 0 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 277px;
+    min-height: 137px;
+    margin: 0 0 25px;
+    font-size: 38px;
+  }
+}
+.hero__title--color {
+  font-size: 48px;
+  line-height: 1.15;
+  color: var(--title-color);
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
+}
+.hero-buttons {
+  display: flex;
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 56px;
+  }
+}
+.hero-button__item {
+  max-width: 84px;
+  max-height: 24px;
+  &:first-child {
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 1280px) {
+    &:first-child {
+      margin-right: 15px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 138px;
+    max-height: 40px;
+  }
+}
+.hero__button {
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  outline: none;
+  padding: 9px 13px;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.3;
+  cursor: pointer;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    padding: 15px 19px;
+  }
+}
+.hero__button--dark {
+  color: var(--text-color-white);
+  background-color: var(--title-color);
+}
+.hero__button--white {
+  color: var(--title-color);
+  background-color: var(--text-color-white);
+}
+.hero-card {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.hero-card__content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.hero-card__image {
+  @media screen and (max-width: 1279px) {
+    width: 124px;
+    height: 126px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 188px;
+    height: 191px;
+    margin-right: 30px;
+  }
+}
+.hero-card__text {
+  @media screen and (max-width: 1279px) {
+    width: 114px;
+    min-height: 48px;
+    margin-bottom: 7px;
+    font-size: 8px;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+    min-height: 78px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  color: var(--text-color-white);
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.hero-card__link {
+  @media screen and (max-width: 1279px) {
+    width: 18px;
+    height: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.hero__image {
+  border-radius: 50%;
+  background-color: #ffa5ba;
+  @media screen and (max-width: 415px) {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 346px;
+    height: 344px;
+    padding-top: 9px;
+    margin-top: 0;
+    margin-bottom: 75px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 324px;
+    height: 322px;
+    padding-top: 32px;
+    padding-left: 71px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+    padding-top: 56px;
+    padding-left: 119px;
+  }
+}
+.hero__icecream {
+  @media screen and (max-width: 767px) {
+    width: 171px;
+    height: 410px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 143px;
+    height: 336px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 236px;
+    height: 557px;
+  }
+}
+.hero-numbers {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-top: 60px;
+    position: relative;
+  }
+}
+.hero-numbers__block {
+  &:first-child {
+    margin-bottom: 13px;
+  }
+  background-repeat: no-repeat;
+  background-position: top 0 right 15%;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url(/images/hero-header/background-circle-768-1x-min.png);
+    background-size: 18px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(/images/hero-header/background-circle-768-2x-min.png);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 20px;
+    background-image: url(/images/hero-header/background-circle-1280-1x-min.png);
+    background-size: 30px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(/images/hero-header/background-circle-1280-2x-min.png);
+  }
+}
+.hero-numbers__quantity {
+  display: block;
+  color: var(--title-color);
+  font-family: Titan One, sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  @media screen and (max-width: 1279px) {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+.hero-numbers__item {
+  color: var(--text-color-white);
+  display: block;
+  font-family: DM Sans, sans-serif;
+  @media screen and (max-width: 1279px) {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+.hero-numbers__image {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  @media screen and (max-width: 1279px) {
+    width: 168px;
+    height: 133px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 293px;
+    height: 232px;
+  }
+}
