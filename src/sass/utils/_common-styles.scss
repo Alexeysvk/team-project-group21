@@ -7,7 +7,6 @@
   }
   
   body {
-    width: 1200px;
     font-family: 'DM Sans', sans-serif;
     letter-spacing: 0.04em;
     background-color: var(--background-white);
@@ -34,6 +33,7 @@
     margin: 0;
     list-style: none;
     padding-left: 0;
+    padding: 0;
   }
   
   a {

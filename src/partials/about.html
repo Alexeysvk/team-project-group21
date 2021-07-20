@@ -1,15 +1,50 @@
 <section>
-    <container class="cow-section ">
-      <div>
-        <p class="cow-section_title-one">tradition and love </p>
+  <div class="container">
+    <container class="cow-section">
+      <div class="cow-section__titles">
+        <p class="cow-section_title-one">tradition and love</p>
         <h2 class="cow-section-tittle-second">how it’s made?</h2>
-     </div>
-     <div class="cow-section-description">
-       <p class="cow-section-description__maine-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
-          Maecenas eleifend erat at justo fringilla.</p>
-       <p class="cow-section-description__text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
-          Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. <br> erat volutpat. Aenean accumsan.</p>
-       <button class="cow-section-button">Read more</button>
-     </div>
+      </div>
+
+      <div class="cow-section__picture">
+        <picture>
+          <source
+            srcset="
+              ./images/about/cow_1280px_1x-min.png 1x,
+              ./images/about/cow_1280px_2x-min.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="./images/about/cow_768px_1x-min.png 1x, ./images/about/cow_768px_2x-min.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/about/cow_320px_1x-min.png 1x, ./images/about/cow_320px_2x-min.png 2x"
+            media="(min-width: 320px)"
+          />
+          <img src="./images/about/cow_320px_1x-min.png" alt="Молоко и корова" />
+        </picture>
+      </div>
+
+      <div class="cow-section-description">
+        <p class="cow-section-description__maine-text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="cow-section-description__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt. <br />
+          erat volutpat. Aenean accumsan.
+        </p>
+        <button class="cow-section__button">
+          Read more
+          <svg class="cow-section__icon" width="4" height="8">
+            <use href="./images/icons/turn-right.svg"></use>
+          </svg>
+        </button>
+      </div>
     </container>
-  </section>
+  </div>
+</section>
