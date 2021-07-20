@@ -367,6 +367,7 @@ summary {
 
 .cow-section {
   padding-top: 125px;
+  background-color: var(--background-milk);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -437,6 +438,12 @@ summary {
   }
 }
 
+.cow-section-description {
+  width: 100%;
+  margin: auto;
+  padding: 0 10px;
+}
+
 @media screen and (min-width: 768px) {
   .cow-section-description {
     width: 340px;
@@ -455,6 +462,7 @@ summary {
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
+  text-align: center;
   margin-bottom: 35px;
   color: var(--text-color-black);
 }
@@ -481,6 +489,7 @@ summary {
   font-size: 12px;
   line-height: 162%;
   margin-bottom: 17px;
+  text-align: center;
   color: var(--text-tel-color-grey);
 }
 
@@ -501,18 +510,23 @@ summary {
   }
 }
 
-.cow-section-button {
+.cow-section__button {
+  width: 176px;
+  height: 44px;
+  font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  color: var(--title-color);
+  cursor: pointer;
+  color: var(--footer-dark-button);
   background-color: var(--text-color-white);
   border-radius: 22px;
+  border: 1px solid transparent;
 }
 
 @media screen and (min-width: 768px) {
-  .cow-section-button {
+  .cow-section__button {
     font-size: 16px;
     line-height: 1.31px;
   }

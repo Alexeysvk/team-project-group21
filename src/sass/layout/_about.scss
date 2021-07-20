@@ -1,5 +1,6 @@
 .cow-section {
   padding-top: 125px;
+  background-color: var(--background-milk);
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 130px;
@@ -22,12 +23,10 @@
   }
 
   @media screen and (min-width: 1280px) {
-    .cow-section {
-      background-image: url(../images/about/milk-bg_1280px_1x-min.png);
-      background-repeat: no-repeat;
-      background-position: left 0 top 415px;
-      background-size: contain;
-    }
+    background-image: url(../images/about/milk-bg_1280px_1x-min.png);
+    background-repeat: no-repeat;
+    background-position: left 0 top 415px;
+    background-size: contain;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
@@ -45,6 +44,13 @@
   margin-bottom: 26px;
 }
 
+.cow-section__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    flex-wrap: nowrap;
+  }
+}
 // Picture
 .cow-section__picture {
   margin-bottom: 46px;
@@ -55,23 +61,33 @@
   }
   @media screen and (min-width: 768px) {
     margin-top: 50px;
+    margin-right: 17px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-top: 55px;
+    margin-right: 74px;
   }
 }
 
 // TEXT
 .cow-section-description {
+  text-align: center;
+  width: 100%;
+
+  padding: 0 10px;
+  margin: auto;
+
   @media screen and (min-width: 768px) {
     width: 340px;
     padding-top: 100px;
+    margin-left: 17px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 463px;
     padding-top: 106px;
+    margin-bottom: 74px;
   }
 }
 
@@ -79,6 +95,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
+  text-align: left;
 
   margin-bottom: 35px;
 
@@ -88,6 +105,7 @@
     font-size: 14px;
     line-height: 176%;
     margin-bottom: 33px;
+    text-align: left;
   }
 
   @media screen and (min-width: 1280px) {
@@ -103,7 +121,7 @@
   font-size: 12px;
   line-height: 162%;
   margin-bottom: 17px;
-
+  text-align: left;
   color: var(--text-tel-color-grey);
 
   @media screen and (min-width: 768px) {
@@ -112,6 +130,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 176%;
+    text-align: left;
   }
 
   @media screen and (min-width: 1280px) {
@@ -122,15 +141,29 @@
 }
 
 // BUTTON
-.cow-section-button {
+.cow-section__thumb {
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.cow-section__button {
+  width: 176px;
+  height: 44px;
+  justify-content: center;
+
+  font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  cursor: pointer;
 
   color: var(--title-color);
   background-color: var(--text-color-white);
+
   border-radius: 22px;
+  border: 1px solid transparent;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -139,7 +172,7 @@
 }
 
 .cow-section__icon {
-  margin-left: 14px;
+  fill: var(--title-color);
 }
 .cow-section_title-one {
   font-family: Titan One;
