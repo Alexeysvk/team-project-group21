@@ -1,36 +1,189 @@
-<section class="">
-    <div>
-        <nav class="navigation">
-          <a href="" class="logo"></a>
-          <ul class="nav__list">
-            <li class="nav__item">Home</li>
-            <li class="nav__item">About us</li>
-            <li class="nav__item">How it’s made?</li>
-            <li class="nav__item">Our products</li>
-            <li class="nav__item">Contact</li>
-          </ul>
-          <button class="header-main-button">Buy now</button>
-        </nav>
+<section class="page-header">
+  <div class="container nav-container">
+    <a href="#" class="logo">
+      <img src="./images/hero-header/logo-2x-tab.png" alt="page-logo" width="200" height="50" />
+    </a>
+    <div class="button-burger">
+      <!-- <svg class="menu-button" width="20" height="12">
+         <use href="./images/icons/sprite.svg#icon-burger">
+         </use>
+       </svg> -->
+      <button type="button" class="menu-button">
+        <svg
+          width="20"
+          height="14"
+          viewBox="0 0 20 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 1H20" stroke="#D41443" />
+          <path d="M0 7H20" stroke="#D41443" />
+          <path d="M0 13H20" stroke="#D41443" />
+        </svg>
+      </button>
+<div class="nav-flex">
+      <nav class="navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link nav__link--current">Home</a></li>
+          <li class="nav__item"><a class="nav__link">About us</a></li>
+          <li class="nav__item"><a class="nav__link">How it’s made?</a></li>
+          <li class="nav__item"><a class="nav__link">Our products</a></li>
+          <li class="nav__item"><a class="nav__link">Contact</li>
+        </ul>
+        
+      </nav>
+      <button type="submit" class="header-buy__button">
+        Buy now
+        <svg
+          class="header-buy__icon"
+          width="7"
+          height="10"
+          viewBox="0 0 7 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.08456 1L5.36577 5L1.08456 9"
+            stroke="#D41443"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
       </div>
+    </div>
+  </div>
 </section>
-<section>
-    <div class="hero">
-      <div>
-      <h1 class="hero-title">ice cream<br>
-        made with <br>
-        passion</h1>
-        <button class="hero-button-dark">Products</button>
-        <button class="hero-button-white">How it’s made?</button>
+<section class="hero">
+  <!-- <div class="hero"> -->
+  <div class="container hero-container">
+    <div class="hero-content">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title--color"> passion</span>
+      </h1>
+      <ul class="hero-buttons">
+        <li class="hero-button__item">
+          <button class="hero__button hero__button--dark">Products</button>
+        </li>
+        <li class="hero-button__item">
+          <button class="hero__button hero__button--white">How it’s made?</button>
+        </li>
+      </ul>
+      <div class="hero-card">
+        <div class="hero-card__content">
+          <picture>
+            <source
+              srcset="
+                /images/hero-header/milk_1280px_1x-min.png 1x,
+                /images/hero-header/milk_1280px_2x-min.png 2x
+              "
+              media="(min-width: 1280px)" />
+
+            <source
+              srcset="
+                /images/hero-header/milk_768px_1x-min.png 1x,
+                /images/hero-header/milk_768px_2x-min.png 2x
+              "
+              media="(min-width: 768px)" />
+
+            <img
+              class="hero-card__image"
+              src="./images/hero-header/milk_768px_1x-min.png"
+              alt="milk"
+              loading="lazy"
+          /></picture>
+          <div>
+            <p class="hero-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
+            <a href="#" class="hero-card__link"
+              ><picture>
+                <source
+                  srcset="
+                    /images/hero-header/arrow-right-1280-1x-min.png 1x,
+                    /images/hero-header/arrow-right-1280-2x-min.png 2x
+                  "
+                  media="(min-width: 1280px)" />
+
+                <source
+                  srcset="
+                    /images/hero-header/arrow-right-768-1x-min.png 1x,
+                    /images/hero-header/arrow-right-768-2x-min.png 2x
+                  "
+                  media="(min-width: 768px)" />
+
+                <img
+                  src="./images/hero-header/arrow-right-1280-1x-min.png"
+                  alt="link"
+                  loading="lazy"
+              /></picture>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="hero-numbers">
-        <div class="hero-numbers__block">
+    </div>
+    <div class="hero__image">
+      <picture>
+        <source
+          srcset="
+            /images/hero-header/ice-cream_1280px_1x-min.png 1x,
+            /images/hero-header/ice-cream_1280px_2x-min.png 2x
+          "
+          media="(min-width: 1280px)" />
+
+        <source
+          srcset="
+            /images/hero-header/ice-cream_768px_1x-min.png 1x,
+            /images/hero-header/ice-cream_768px_2x-min.png 2x
+          "
+          media="(min-width: 768px)" />
+        <source
+          srcset="
+            /images/hero-header/ice-cream_320px_1x-min.png 1x,
+            /images/hero-header/ice-cream_320px_2x-min.png 2x
+          "
+          media="(min-width: 320px)" />
+
+        <img
+          class="hero__icecream"
+          src="./images/hero-header/ice-cream_320px_1x-min.png"
+          alt="icecream"
+          loading="lazy"
+      /></picture>
+    </div>
+    <div class="hero-numbers">
+      <div class="hero-numbers__block">
         <p class="hero-numbers__quantity">16</p>
         <p class="hero-numbers__item">cafes</p>
-        </div>
-        <div class="hero-numbers__block">
+      </div>
+      <div class="hero-numbers__block">
         <p class="hero-numbers__quantity">23</p>
         <p class="hero-numbers__item">food trucks</p>
-        </div>
-        <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
       </div>
-    </section>
+      <div class="hero-numbers__image">
+        <picture>
+          <source
+            srcset="
+              /images/hero-header/girl_1280px_1x-min.png 1x,
+              /images/hero-header/girl_1280px_2x-min.png 2x
+            "
+            media="(min-width: 1280px)" />
+
+          <source
+            srcset="
+              /images/hero-header/girl_768px_1x-min.png 1x,
+              /images/hero-header/girl_768px_2x-min.png 2x
+            "
+            media="(min-width: 768px)" />
+
+          <img
+            src="./images/hero-header/girl_1280px_2x-min.png"
+            alt="girl-whith-icecream"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
