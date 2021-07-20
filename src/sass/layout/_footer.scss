@@ -101,9 +101,10 @@
     display: flex;
     justify-content: flex-end;
     font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
+    font-style: bold;
+    font-weight: 500;
     font-size: 16px;
+    line-height: 26px;
     line-height: 186%;
     letter-spacing: 0.02em;
     margin-bottom: 43px;
@@ -135,6 +136,7 @@
     padding-top: 9px;
     padding-bottom: 9px;
     width: auto;
+
   }
 }
 
