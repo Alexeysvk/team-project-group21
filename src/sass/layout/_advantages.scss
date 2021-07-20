@@ -1,122 +1,186 @@
+.advantag{
+  padding: 0;
+}
 .advantages {
-    background-color: var(--background-milk);
+  background-color: var(--background-milk);
+  margin: 0;
+  padding-top: 39px;
+  width: 100%;
+  padding-left: 20px;
+
+  &__li {
     margin: 0;
-    padding-top: 20px;
-    width: 100%;
-  
+    width: 230px;
+    position: relative;
+
+    &--milk::before {
+      content: '';
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 33px;
+      height: 50px;
+      background-image: url(../images/advantages/milk-icon_x1-min.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/milk-icon_x2-min.png);
+      }
+    }
+    &--apple::before {
+      content: '';
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/advantages/apple-icon_x1-min.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/apple-icon_x2-min.png);
+      }
+    }
+    &--heart::before {
+      content: '';
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 44px;
+      height: 50px;
+      background-image: url(../images/advantages/heart-icon_x1-min.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/heart-icon_x2-min.png);
+      }
+    }
+  }
+  &__title {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.139;
+    letter-spacing: 0.04em;
+    color: var(--title-color);
+    padding-top: 66px;
+  }
+  &__p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 170%;
+    letter-spacing: 0.04em;
+    display: block;
+    margin-bottom: 38px;
+  }
+  &__p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 38px;
+  }
+  &__img {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+
     &__li {
-      margin: 0;
-      width: 230px;
-      position: relative;
+      width: 180px;
+
+      &:not(:first-child) {
+        margin-left: 60px;
+      }
     }
     &__title {
-        font-family: 'Titan One';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 58px;
-        line-height: 66px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: var(--title-color);
+      font-family: Titan One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 1.125;
+      letter-spacing: 0.04;
+      display: block;
+      margin-bottom: 13px;
+      padding-top: 86px;
     }
     &__p {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 176%;
-        letter-spacing: 0.02em;
-        display: block;
-        margin-bottom: 38px;
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 174%;
+      letter-spacing: 0.04;
     }
+
     &__p:last-child {
       margin-bottom: 0;
-      padding-bottom: 38px;
+      padding-bottom: 140px;
     }
+
     &__img {
-      margin-bottom: 16px;
+      margin-bottom: 36px;
     }
   }
-  
-  @media screen and (min-width: 480px) {
-  }
-  
-  @media screen and (min-width: 768px) {
-    .advantages {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-left: 36px;
-  
-      &__li {
-        width: 180px;
-  
-        &:not(:first-child) {
-          margin-left: 60px;
-        }
-      }
-      &__title {
-        font-family: 'Titan One';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 48px;
-        line-height: 1.1;
-        letter-spacing: 0.04em;
-        display: block;
-        margin-bottom: 13px;
-      }
-      &__p {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 1.74;
-        letter-spacing: 0.04em;
-        display: block;
-        margin-bottom: 13px;
-      }
-      &__img {
-        margin-bottom: 36px;
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 115px;
+
+    &__li {
+      width: 330px;
+      &:not(:first-child) {
+        margin-left: 30px;
       }
     }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    .advantages {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-left: 115px;
-  
-      &__li {
-        width: 330px;
-        &:not(:first-child) {
-          margin-left: 30px;
-        }
-      }
-      &__title {
-        font-family: 'Titan One';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 58px;
-        line-height: 1.03;
-        letter-spacing: 0.04em;
-        display: block;
-        margin-bottom: 13px;
-      }
-      &__p {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 1.03;
-        letter-spacing: 0.04em;
-        display: block;
-        margin-bottom: 13px;
-      
-      }
-      &__img {
-        margin-bottom: 40px;
-      }
+    &__title {
+      font-family: Titan One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 58px;
+      line-height: 1.034;
+      letter-spacing: 0.04;
+      margin-bottom: 15px;
+      padding-top: 90px;
+    }
+    &__p {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 176%;
+      letter-spacing: 0.02;
+    }
+
+    &__p:last-child {
+      margin-bottom: 0;
+      padding-bottom: 139px;
+    }
+
+    &__img {
+      margin-bottom: 40px;
     }
   }
+}
