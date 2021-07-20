@@ -421,7 +421,7 @@
 }
 .menu {
   @media screen and (max-width: 1279px) {
-    z-index: 800;
+    z-index: 10001;
     position: fixed;
     // position: absolute;
     height: 100vh;
