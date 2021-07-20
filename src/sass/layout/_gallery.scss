@@ -1,0 +1,25 @@
+.gallery {
+  margin: 0 auto;
+  width: 100%;
+  background: linear-gradient(to bottom, #FFF5F6 58%, #FFFFFF 42%);
+  &__img {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    &__wrapper {
+      max-width: 1010px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
