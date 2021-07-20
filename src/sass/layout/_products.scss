@@ -4,7 +4,7 @@
 }
 
 .product_title {
-  width: 200px;
+  width: 100%;
   margin: auto;
   @media screen and (min-width: 768px) {
     width: 283px;
@@ -58,7 +58,6 @@
   .products_list__item {
     position: relative;
     display: block;
-    width: 280px;
     height: 598px;
     margin-bottom: 0;
     text-align: center;
