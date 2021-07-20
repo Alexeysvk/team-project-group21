@@ -365,6 +365,60 @@ summary {
   display: list-item;
 }
 
+.cow-section {
+  padding-top: 125px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .cow-section {
+    padding-top: 130px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cow-section {
+    display: block;
+    background-image: url(../images/about/milk-bg_480px_1x-min.png);
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 61px;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .cow-section .cow-section {
+    background-image: url(../images/about/milk-bg_480px_1x-min.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cow-section .cow-section {
+    background-image: url(../images/about/milk-bg_1280px_1x-min.png);
+    background-repeat: no-repeat;
+    background-position: left 0 top 415px;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .cow-section .cow-section {
+    background-image: url(../images/about/milk-bg_1280px_2x-min.png);
+  }
+}
+
+.cow-section-description__maine-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  margin-bottom: 35px;
+  color: var(--text-color-black);
+}
+
+@media screen and (min-width: 768px) {
+  .cow-section-description__maine-text {
+    font-size: 14px;
+    line-height: 176%;
+    margin-bottom: 33px;
 .advantages {
   background-color: var(--background-milk);
   margin: 0;
@@ -450,10 +504,62 @@ summary {
   }
   .advantages__img {
     margin-bottom: 36px;
+
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .cow-section-description__maine-text {
+    font-size: 16px;
+    line-height: 176%;
+    margin-bottom: 29px;
+  }
+}
+
+.cow-section-description__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  margin-bottom: 17px;
+  color: var(--text-tel-color-grey);
+}
+
+@media screen and (min-width: 768px) {
+  .cow-section-description__text {
+    margin-bottom: 62px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 176%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cow-section-description__text {
+    margin-bottom: 51px;
+    font-size: 14px;
+    line-height: 194%;
+  }
+}
+
+.cow-section-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--title-color);
+  background-color: var(--text-color-white);
+  border-radius: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .cow-section-button {
+    font-size: 16px;
+    line-height: 1.31px;
+  }
+}
+
+.footer-container {
   .advantages {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -660,13 +766,8 @@ summary {
 .gallery {
   margin: 0 auto;
   width: 100%;
-<<<<<<< HEAD
   background: -webkit-gradient(linear, left top, left bottom, color-stop(58%, #FFF5F6), color-stop(42%, #FFFFFF));
   background: linear-gradient(to bottom, #FFF5F6 58%, #FFFFFF 42%);
-=======
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(58%, #FFF5F6), color-stop(42%, #ffffff));
-  background: linear-gradient(to bottom, #FFF5F6 58%, #ffffff 42%);
->>>>>>> 68e9e550cc6f4339ed6450bd8429a4008dff9f5a
 }
 
 .gallery__img {
