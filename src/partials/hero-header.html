@@ -8,7 +8,7 @@
          <use href="./images/icons/sprite.svg#icon-burger">
          </use>
        </svg> -->
-      <button type="button" class="menu-button">
+      <button type="button" class="menu__open">
         <svg
           width="20"
           height="14"
@@ -32,7 +32,8 @@
         </ul>
         
       </nav>
-      <button type="submit" class="header-buy__button">
+      
+      <button type="submit" class="header-buy__button header-buy__button--hidden">
         Buy now
         <svg
           class="header-buy__icon"
@@ -52,7 +53,42 @@
         </svg>
       </button>
       </div>
+    
     </div>
+      <div class="menu is-open"> 
+        <button type="button" class="menu__close"><svg class="icon-close" width="16" height="16"  fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.25928 1L14.7408 15" stroke="white"/>
+<path d="M1 14.7407L15 1.25924" stroke="white"/>
+</svg></button>
+        <button class="header-buy__button" type="submit">
+          Buy now
+        <svg
+          class="header-buy__icon"
+          width="7"
+          height="10"
+          viewBox="0 0 7 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.08456 1L5.36577 5L1.08456 9"
+            stroke="#D41443"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        </button>
+        <nav>
+          <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link menu__link--current">Home</a></li>
+          <li class="menu__item"><a class="menu__link">About us</a></li>
+          <li class="menu__item"><a class="menu__link">How it’s made?</a></li>
+          <li class="menu__item"><a class="menu__link">Our products</a></li>
+          <li class="menu__item"><a class="menu__link">Contact</li>
+        </ul>
+        </nav>
+      </div>
   </div>
 </section>
 <section class="hero">
