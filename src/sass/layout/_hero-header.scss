@@ -61,8 +61,8 @@
   display: inline-flex;
   align-items: center;
 }
-.menu-button {
-  z-index: 1100;
+.menu__open {
+  z-index: 1;
   display: flex;
   padding: 0;
   margin: 0;
@@ -94,11 +94,16 @@
   &:focus {
     background-color: var(--white-buttons-hover-color);
   }
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-left: 20px;
+  }
+}
+.header-buy__button--hidden {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 .header-buy__icon {
@@ -413,4 +418,70 @@
     width: 293px;
     height: 232px;
   }
+}
+.menu {
+  @media screen and (max-width: 1279px) {
+    z-index: 800;
+    position: fixed;
+    // position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    background-color: var(--tablet-tel-menu-bg-color);
+    width: 250px;
+    padding-top: 60px;
+    padding-left: 21px;
+    flex-direction: column;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (max-width: 1279px) and (min-width: 768px) and (max-width: 1279px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.menu__list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+}
+.menu__item {
+  @media screen and (max-width: 1279px) {
+    display: block;
+    border-top: 1px solid #e18298;
+    padding-top: 11px;
+    padding-bottom: 12px;
+  }
+}
+.menu__link {
+  color: var(--text-color-white);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--title-color);
+  }
+}
+.menu__link--current {
+  color: var(--title-color);
+}
+.menu__close {
+  position: absolute;
+  left: 80%;
+
+  bottom: 90%;
+  background-color: transparent;
+  border: none;
+}
+.icon-close {
+  background-color: transparent;
+}
+.is-open {
+  opacity: 0;
+  pointer-events: none;
 }
