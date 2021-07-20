@@ -6,6 +6,16 @@
     align-items: center;
     width: 100%;
   }
+  border-color: var(--background-white);
+  margin-bottom: 170px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 234px;
+  }
+   
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 234px;
+  }
+  
 }
 
 @media screen and (min-width: 480px) {
