@@ -1444,7 +1444,7 @@ summary {
 
 .customer__name::before {
   content: '';
-  background-image: url(../images/icons/dots.svg);
+  background-image: url("../images/icons/dots.svg");
   width: 32px;
   height: 4px;
   background-repeat: no-repeat;
@@ -1509,7 +1509,7 @@ summary {
 
 .slick-dots li.slick-active button {
   background-color: transparent;
-  background-image: url("../images/icons/home.svg");
+  background-image: url("../images/icons/house.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 15px;
