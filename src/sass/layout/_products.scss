@@ -2,16 +2,9 @@
   padding-top: 121px;
   padding-bottom: 98px;
 }
-.products_container{
-
- 
-  @media screen and (min-width: 1280px) {
-    padding: 0 95px;
-  }
-}
 
 .product_title {
-  width: 100%;
+  width: 200px;
   margin: auto;
   @media screen and (min-width: 768px) {
     width: 283px;
@@ -47,11 +40,9 @@
 .products_list {
    @media screen and (min-width: 320px) and (max-width: 767px) {
     display: block;
-    // display: flex;
-    // justify-content: center;
    }
   
-    @media screen and (min-width: 768px)  {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
       display: flex;
       // width: 700px;
       justify-content: center;
@@ -59,7 +50,7 @@
   
     @media screen and (min-width: 1280px) {
       display: flex;
-      // width: 1054px;
+      width: 1054px;
       justify-content: center;
     }
   }
@@ -67,16 +58,14 @@
   .products_list__item {
     position: relative;
     display: block;
-    // width: 280px;
-    width: 100%;
+    width: 280px;
     height: 598px;
     margin-bottom: 0;
     text-align: center;
+  
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: scale(1);
-    &:hover {
-      // transform: translateY(-10px);
-      transform: scale(1.1);
+    &__item:hover {
+      transform: translateY(-10px);
     }
   
     @media screen  and (max-width: 767px) {
@@ -145,7 +134,7 @@
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       padding-top: 156px;
       padding-bottom: 40px;
-      width: 220px;
+      width: 280px;
       height: 485px;
     }
   
@@ -253,21 +242,19 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    // background-color: var( --text-color-white);
-    border-color: yellow;
+    background-color: var( --text-color-white);
     border-style: none;
     padding: 0;
     cursor: pointer;
-    // fill: var(--title-color);
-    // &::after {
-    //   content: '';
-    //   // background-image: url('/src/images/icons/turn-right.svg');
-    //   background-position: 50% 50%;
-    //   background-repeat: no-repeat;
-    //   display: inline-block;
-    //   width: 40px;
-    //   height: 40px;
-    // }
+    &::after {
+      content: '';
+      // background-image: url('/src/images/arrow-right.svg');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+    }
   }
   
   
