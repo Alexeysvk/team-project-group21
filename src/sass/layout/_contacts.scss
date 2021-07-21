@@ -20,7 +20,7 @@
       height: 78px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: url('/images/contacts/contacts-fon-1x.png');
     background-position-y: 102px;
     background-repeat: no-repeat;
@@ -35,6 +35,7 @@
   padding: 0 30px;
   @media screen and (min-width: 768px) {
     padding: 0 16px;
+
   }
   @media screen and (min-width: 1280px) {
     padding: 0 95px;
@@ -64,7 +65,7 @@
     align-items: stretch;
     flex-grow: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 86px;
   }
 }
@@ -102,7 +103,7 @@
       }
     }
   
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       flex-basis: calc((100% - 62px) / 3);
       width: auto;
       margin-right: 20px;
@@ -158,7 +159,7 @@
       font-size: 14px;
       line-height: 26px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 16px;
       line-height: 30px;
     }
@@ -172,7 +173,7 @@
       font-size: 14px;
       line-height: 23px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 16px;
       line-height: 30px;
     }
@@ -185,7 +186,7 @@
       font-size: 14px;
       line-height: 26px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 16px;
       line-height: 30px;
     }
@@ -201,7 +202,7 @@
       font-size: 14px;
       line-height: 26px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 16px;
       line-height: 30px;
     }
@@ -218,7 +219,7 @@
       font-size: 14px;
       line-height: 26px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 16px;
       line-height: 30px;
     }
@@ -233,7 +234,7 @@
       justify-content: center;
       align-items: center;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       margin-bottom: 165px;
     }
   }
@@ -260,7 +261,7 @@
     font-size: 14px;
     line-height: 26px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 30px;
   }
@@ -275,7 +276,7 @@
     justify-content: center;
     align-items: center;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 165px;
   }
 }
@@ -290,11 +291,11 @@
   line-height: 21px;
   font-style: normal;
   margin: 0 auto;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     margin: 0 15px 0 0;
     width: 191px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 198px;
     margin: 0 15px 0 0;
   }
