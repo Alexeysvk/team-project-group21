@@ -1,11 +1,29 @@
-.gallery {
-  margin: 0 auto;
-  width: 100%;
+.section {
   background: linear-gradient(to bottom, #FFF5F6 58%, #FFFFFF 42%);
-  &__img {
+  width: 100%;
+  margin: 0 auto;
+}
+.gallery {
+  width: 100%;
+  z-index: 1;
+
+  &__flex {
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      width: 620px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1010px;
+    }
   }
+<<<<<<< Updated upstream
   margin-bottom: 170px;
   @media screen and (min-width: 768px) {
     margin-bottom: 234px;
@@ -19,17 +37,39 @@
 
 @media screen and (min-width: 480px) {
 }
+=======
+  &__item {
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+  }
 
-@media screen and (min-width: 768px) {
-  .gallery {
-    &__wrapper {
-      max-width: 1010px;
-      height: auto;
-      margin: 0 auto;
-    }
+  &__item:hover,
+  &__item:focus {
+    transform: scale(0.9);
+    z-index: 2;
+  }
+>>>>>>> Stashed changes
+
+  &__item:nth-child(n + 1) {
+    margin-left: 6px;
+    margin-bottom: 6px;
   }
 }
 
+<<<<<<< Updated upstream
 @media screen and (min-width: 1280px) {
 }
 
+=======
+.gallery__picture--berries {
+  display: block;
+  padding-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 80px;
+  }
+}
+>>>>>>> Stashed changes
