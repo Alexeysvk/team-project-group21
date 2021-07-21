@@ -281,6 +281,7 @@
   }
 }
 .locations__button {
+  cursor: pointer;
   outline: none !important;
   border: none;
   display: block;
@@ -310,21 +311,27 @@
       background: var(--footer-dark-button);
     }
   }
+  &:hover{
+    background: var(--footer-dark-button);
+
+  }
 }
 
 .locations__button-white {
   background: var(--text-color-white);
   color: var(--footer-dark-button);
   &:hover{
-    background: var( --white-buttons-hover-color);
+  background: var(--white-buttons-hover-color);
+
   }
 }
 .locations__icon-white {
   color: mintcream;
-  margin-left: 12px;
+  margin-left: 14px;
+
 }
 .locations__icon-red {
   fill: white;
   background: inherit;
-  margin-left: 10px;
+  margin-left: 14px;
 }
