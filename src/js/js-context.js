@@ -19,5 +19,4 @@ more.style.display = "none";
 btn.innerHTML = "";
 checkIt = true;
 }
-
 }

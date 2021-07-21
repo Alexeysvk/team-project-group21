@@ -1495,7 +1495,7 @@ summary {
 .сustomer-reviews__feedback::before {
   display: block;
   content: ' ';
-  background-image: url();
+  background-image: url(../images/icons/quotes.svg);
   background-size: contain;
   background-repeat: repeat-x;
   height: 40px;
@@ -1523,6 +1523,7 @@ summary {
 .more::before {
   display: block;
   content: ' ';
+  background-image: url("../images/icons/markers.svg");
   height: 4px;
   width: 32px;
   background-position: center;
@@ -1578,7 +1579,7 @@ summary {
   text-align: center;
   color: #d31342;
   content: '';
-  background-image: url("../images/home.svg");
+  background-image: url("../images/icons/house.svg");
   width: 12px;
   height: 12px;
   background-repeat: no-repeat;
@@ -1589,7 +1590,7 @@ summary {
 .slick-dots li:nth-child(1) button {
   width: 12px;
   height: 12px;
-  background-image: url("../images/home-grey.svg");
+  background-image: urlurl("../images/icons/home-grey");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1602,7 +1603,7 @@ summary {
 .slick-dots li:nth-child(1) button:hover {
   width: 12px;
   height: 12px;
-  background-image: url("../images/home.svg");
+  background-image: url("../images/icons/house.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
