@@ -1352,33 +1352,6 @@ summary {
   }
 }
 
-.container {
-  width: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
 .title--hidden {
   width: 1px;
   height: 1px;
