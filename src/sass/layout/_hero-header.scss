@@ -427,8 +427,10 @@
     height: 100vh;
     top: 0;
     right: 0;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
     background-color: var(--tablet-tel-menu-bg-color);
     width: 250px;
     padding-top: 60px;
@@ -482,9 +484,9 @@
   background-color: transparent;
 }
 .is-open {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
 }
 .button__link {
   text-decoration: none;
