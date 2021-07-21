@@ -25,3 +25,50 @@
 
 
 }
+
+$white: #ffffff;
+$black: #000000;
+
+$pink-icecream-bg: #ffb8ca;
+$pink-light-bg: #fff5f6;
+$pink-dark-bg: #ffa5ba;
+
+$ice-coffe-bg: #f0d1a5;
+
+$milkshakes-bg: #c2e297;
+
+$accent-color: #d41443;
+
+$text: #907e82;
+$text-bg: #fafafa;
+
+$pseudo-element: #e1e1e1;
+$dots: #d9d9d9;
+
+$button-hover-accent: #c7133e;
+
+$button-hover: #ecebeb;
+
+$button-accent: #d41342;
+
+$social-icons: #fea5bb;
+
+$light-gray-bg: #e5e5e5;
+
+/*--shadows----------------------------------------*/
+
+$shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+$gallery-shine: 0px 0px 39px 0px rgba(254, 165, 187, 0.75);
+
+$contacts-shine: 0px 0px 20px 5px rgba(212, 20, 67, 0.2);
+
+$ice-coffee-shine: 0px 0px 20px 5px rgba(240, 209, 165, 0.5);
+
+$milkshake-shine: 0px 0px 20px 5px rgba(194, 226, 151, 0.5);
+
+/*--timing-function------------------------------------------*/
+
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$shake-time: 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
