@@ -1,4 +1,4 @@
-.cow-cont{
+.cow-cont {
   padding: 0;
 }
 .cow-section {
@@ -45,51 +45,53 @@
   text-align: center;
   justify-content: center;
   margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
-
 .cow-section__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
   @media screen and (min-width: 768px) {
     display: flex;
-
-    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 // Picture
 .cow-section__picture {
   margin-bottom: 46px;
-
   @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
   }
   @media screen and (min-width: 768px) {
-    margin-top: 50px;
+    padding-top: 50px;
     margin-right: 17px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 55px;
+    padding-top: 55px;
     margin-right: 74px;
   }
 }
 
 // TEXT
 .cow-section-description {
-  text-align: center;
-  width: 100%;
-
   padding: 0 10px;
-  margin: auto;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
 
   @media screen and (min-width: 768px) {
     width: 340px;
-    padding-top: 100px;
+    padding: 0;
     margin-left: 17px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 463px;
-    padding-top: 106px;
     margin-bottom: 74px;
   }
 }
@@ -98,7 +100,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
-  text-align: left;
+  text-align: start;
 
   margin-bottom: 35px;
 
@@ -108,13 +110,16 @@
     font-size: 14px;
     line-height: 176%;
     margin-bottom: 33px;
-    text-align: left;
+    text-align: start;
+    padding: 0;
+    padding-top: 140px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 176%;
     margin-bottom: 29px;
+    padding-top: 40px;
   }
 }
 
@@ -123,17 +128,19 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
+
   margin-bottom: 17px;
-  text-align: left;
+  text-align: start;
   color: var(--text-tel-color-grey);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 62px;
+    padding: 0;
 
     font-weight: 500;
     font-size: 14px;
     line-height: 176%;
-    text-align: left;
+    text-align: start;
   }
 
   @media screen and (min-width: 1280px) {
@@ -145,11 +152,11 @@
 
 // BUTTON
 .cow-section__thumb {
+  text-align: center;
   @media screen and (min-width: 768px) {
-    text-align: left;
+    text-align: start;
   }
 }
-
 .cow-section__button {
   width: 176px;
   height: 44px;
