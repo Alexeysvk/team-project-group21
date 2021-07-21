@@ -45,16 +45,15 @@
 }
 
 .products_list {
-   @media screen and (min-width: 320px) and (max-width: 767px) {
+   @media screen  and (max-width: 767px) {
     display: block;
-    // display: flex;
-    // justify-content: center;
    }
   
     @media screen and (min-width: 768px)  {
       display: flex;
-      // width: 700px;
       justify-content: center;
+      // width: 700px;
+
     }
   
     @media screen and (min-width: 1280px) {
@@ -182,19 +181,22 @@
     
     &::after {
       content: '';
-      border: 1px solid tomato;
+      // border: 1px solid tomato;
       position: absolute;
+      font-size: 30px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
       width: 26px;
       height: 6px;
       left: 50%;
       transform: translate(-50%);
-      bottom: 0%;
+      bottom: 0;
       display: block;
       text-align: center;
       width: 26px;
       height: 6px;
       text-align: center;
-      // background-image: url('https://img.icons8.com/2266EE/search');
+      // background-image: url('');
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
       padding-bottom: 30px;
@@ -253,8 +255,8 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    // background-color: var( --text-color-white);
-    border-color: yellow;
+    background-color: var( --text-color-white);
+    // border-color: yellow;
     border-style: none;
     padding: 0;
     cursor: pointer;
@@ -268,6 +270,11 @@
     //   width: 40px;
     //   height: 40px;
     // }
+  }
+
+  .arrow_right {
+    align-items: center;
+    justify-content: center;
   }
   
   
