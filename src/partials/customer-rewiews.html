@@ -1,273 +1,213 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="ice"
-    />
-    
-    <title>Reviews</title>
+<section class="сustomer-reviews font">
+  <div class="container">
+    <h2 class="сustomer-reviews__title title title--hidden">Customer reviews</h2>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet"> 
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
-
-
-    <link rel="stylesheet" href="./css/maine.min.css" />
-  </head>
-
-  <body>
-  
-      <section class="сustomer-reviews font">
-        <div class="container">
-          <h2 class="сustomer-reviews__title title title--hidden">
-            Customer reviews
-          </h2>
-
-          <div class="slider">
-            <div class="slider__item">
-
-              <div class="picture-wrapper">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/testimonials1 1x.webp 1x,
-                      ./images/testimonials1 2x.webp 2x
+    <div class="slider">
+      <div class="slider__item">
+        <div class="picture-wrapper">
+          <picture>
+            <source
+              srcset="
+                      ./images/customers/testimonials1 1x.webp 1x,
+                      ./images/customers/testimonials1 2x.webp 2x
                     "
-                    type="image/webp"
-                
-                  />
-                  <source
-                    srcset="
-                      ./images/testimonials1 1x.jpg 1x,
-                      ./images/testimonials1 2x.jpg 2x
+              type="image/webp"
+            />
+            <source
+              srcset="
+                      ./images/customers/testimonials1 1x.jpg 1x,
+                      ./images/customers/testimonials1 2x.jpg 2x
                     "
-                  />
+            />
 
-                  <img
-                    src="./images/testimonials1 1x.jpg"
-                    alt="Emily"
-                    width="85"
-                    height="85"
-                    class="сustomer-reviews__img"
-                  />
-                </picture>
-              </div>
-              
-
-              <!-- <div class="quotes-wrapper">
-                <svg
-                  width="54"
-                  height="40"
-                  class="сustomer-reviews__icon--quotes"
-                >
-                  <use href="./images/symbol-defs.svg#icon-quotes"></use>
-                </svg>
-              </div> -->
-
-              <div class="сustomer-reviews__wrapper">
-                <p class="сustomer-reviews__feedback">
-                  <span class="underline">
-                    Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-                    Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
-                    Lorem ipsum primis in nibh vel risus 
-                    <span id="dots">. </span> 
-                    <span id="more">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. </span>
-                  </span>
-                </p>
-                
-              </div>
-              <button id="btn" class="more"></button>
-
-    
-           
-
-              <!-- <div class="сustomer-reviews__more dot-group">
-                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
-                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
-                </svg>
-                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
-                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
-                </svg>
-                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
-                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
-                </svg>
-              </div> -->
-
-              <p class="сustomer-reviews__location">Emily, Los Angeles</p>
-            </div>
-            <div class="slider__item">
-
-              <div class="picture-wrapper">
-                 <picture>
-                  <source
-                    srcset="
-                      ./images/testimonials2 1x.webp 1x,
-                      ./images/testimonials2 2x.webp 2x
-                    "
-                    type="image/webp"
-                
-                  />
-                  <source
-                    srcset="
-                      ./images/testimonials2 1x.jpg 1x,
-                      ./images/testimonials2 2x.jpg 2x
-                    "
-                  />
-
-                  <img
-                    src="./images/testimonials2 1x.jpg"
-                    alt="Emily"
-                    width="85"
-                    height="85"
-                    class="сustomer-reviews__img"
-                  />
-                </picture>
-              </div>
-
-              <!-- <div class="quotes-wrapper">
-                <svg
-                  width="54"
-                  height="40"
-                  class="сustomer-reviews__icon--quotes"
-                >
-                  <use href="./images/symbol-defs.svg#icon-quotes"></use>
-                </svg>
-              </div> -->
-              
-              <div class="сustomer-reviews__wrapper">
-                <p class="сustomer-reviews__feedback">
-                  <span class="underline">
-                    Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-                    Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
-                    Lorem ipsum primis in nibh vel risus 
-                    <span id="dots">. </span> 
-                    <span id="more">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. </span>
-                  </span>
-                </p>
-                
-              </div>
-              <button id="btn" class="more"></button>
-
-
-
-              <!-- <div class="сustomer-reviews__more dot-group">
-                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
-                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
-                </svg>
-                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
-                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
-                </svg>
-                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
-                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
-                </svg>
-              </div> -->
-
-              <p class="сustomer-reviews__location">Abby, Chicago</p>
-            </div>
-            <div class="slider__item">
-
-              <div class="picture-wrapper">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/testimonials3 1x.webp 1x,
-                      ./images/testimonials3 2x.webp 2x
-                    "
-                    type="image/webp"
-                
-                  />
-                  <source
-                    srcset="
-                      ./images/testimonials3 1x.jpg 1x,
-                      ./images/testimonials3 2x.jpg 2x
-                    "
-                  />
-
-                  <img
-                    src="./images/testimonials3 1x.jpg"
-                    alt="Emily"
-                    width="85"
-                    height="85"
-                    class="сustomer-reviews__img"
-                  />
-                </picture>
-              </div> 
-
-              <!-- <div class="quotes-wrapper">
-                <svg
-                  width="54"
-                  height="40"
-                  class="сustomer-reviews__icon--quotes"
-                >
-                  <use href="./images/symbol-defs.svg#icon-quotes"></use>
-                </svg>
-              </div> -->
-              
-              <div class="сustomer-reviews__wrapper">
-                <p class="сustomer-reviews__feedback">
-                  <span class="underline">
-                    Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-                    Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
-                    Lorem ipsum primis in nibh vel risus 
-                    <span id="dots">. </span> 
-                    <span id="more">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. </span>
-                  </span>
-                </p>
-                
-              </div>
-              <button id="btn" class="more"></button>
-
-              
-
-                 <!-- <div class="сustomer-reviews__more dot-group">
-                  <svg width="4" height="4" class="сustomer-reviews__icon--markers">
-                    <use href="./images/symbol-defs.svg#icon-dot-small"></use>
-                  </svg>
-                  <svg width="4" height="4" class="сustomer-reviews__icon--markers">
-                    <use href="./images/symbol-defs.svg#icon-dot-small"></use>
-                  </svg>
-                  <svg width="4" height="4" class="сustomer-reviews__icon--markers">
-                    <use href="./images/symbol-defs.svg#icon-dot-small"></use>
-                  </svg>
-              </div> -->
-
-        
-
-              <p class="сustomer-reviews__location">Jenny, New York</p>
-            </div>
-          </div>
-            <!-- <svg width="12" height="12" class="home">
-            <use href="./images/symbol-defs.svg#icon-home-grey"></use>
-            </svg> -->
+            <img
+              src="./images/customers/testimonials1 1x.jpg"
+              alt="Emily"
+              width="85"
+              height="85"
+              class="сustomer-reviews__img"
+            />
+          </picture>
         </div>
 
-     
-          <!-- <div style="width: 180px;" class="hr"><hr><hr><hr><hr><hr><hr><hr><hr></div> -->
+        <!-- <div class="quotes-wrapper">
+                <svg
+                  width="54"
+                  height="40"
+                  class="сustomer-reviews__icon--quotes"
+                >
+                  <use href="./images/symbol-defs.svg#icon-quotes"></use>
+                </svg>
+              </div> -->
 
+        <div class="сustomer-reviews__wrapper">
+          <p class="сustomer-reviews__feedback">
+            <span class="underline">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus
+              <span id="dots">. </span>
+              <span id="more"
+                >Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem.
+              </span>
+            </span>
+          </p>
+        </div>
+        <button id="btn" class="more"></button>
 
-        
+        <!-- <div class="сustomer-reviews__more dot-group">
+                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
+                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
+                </svg>
+                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
+                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
+                </svg>
+                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
+                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
+                </svg>
+              </div> -->
 
-      </section>
+        <p class="сustomer-reviews__location">Emily, Los Angeles</p>
+      </div>
+      <div class="slider__item">
+        <div class="picture-wrapper">
+          <picture>
+            <source
+              srcset="
+                      ./images/customers/testimonials2 1x.webp 1x,
+                      ./images/customers/testimonials2 2x.webp 2x
+                    "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                      ./images/customers/testimonials2 1x.jpg 1x,
+                      ./images/customers/testimonials2 2x.jpg 2x
+                    "
+            />
 
+            <img
+              src="./images/customers/testimonials2 1x.jpg"
+              alt="Emily"
+              width="85"
+              height="85"
+              class="сustomer-reviews__img"
+            />
+          </picture>
+        </div>
 
+        <!-- <div class="quotes-wrapper">
+                <svg
+                  width="54"
+                  height="40"
+                  class="сustomer-reviews__icon--quotes"
+                >
+                  <use href="./images/symbol-defs.svg#icon-quotes"></use>
+                </svg>
+              </div> -->
 
-    </main>
+        <div class="сustomer-reviews__wrapper">
+          <p class="сustomer-reviews__feedback">
+            <span class="underline">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus
+              <span id="dots">. </span>
+              <span id="more"
+                >Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem.
+              </span>
+            </span>
+          </p>
+        </div>
+        <button id="btn" class="more"></button>
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <!-- <div class="сustomer-reviews__more dot-group">
+                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
+                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
+                </svg>
+                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
+                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
+                </svg>
+                <svg width="4" height="4" class="сustomer-reviews__icon--markers">
+                  <use href="./images/symbol-defs.svg#icon-dot-small"></use>
+                </svg>
+              </div> -->
+
+        <p class="сustomer-reviews__location">Abby, Chicago</p>
+      </div>
+      <div class="slider__item">
+        <div class="picture-wrapper">
+          <picture>
+            <source
+              srcset="
+                      ./images/customers/testimonials3 1x.webp 1x,
+                      ./images/customers/testimonials3 2x.webp 2x
+                    "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                      ./images/customers/testimonials3 1x.jpg 1x,
+                      ./images/customers/testimonials3 2x.jpg 2x
+                    "
+            />
+
+            <img
+              src="./images/customers/testimonials3 1x.jpg"
+              alt="Emily"
+              width="85"
+              height="85"
+              class="сustomer-reviews__img"
+            />
+          </picture>
+        </div>
+
+        <!-- <div class="quotes-wrapper">
+                <svg
+                  width="54"
+                  height="40"
+                  class="сustomer-reviews__icon--quotes"
+                >
+                  <use href="./images/symbol-defs.svg#icon-quotes"></use>
+                </svg>
+              </div> -->
+
+        <div class="сustomer-reviews__wrapper">
+          <p class="сustomer-reviews__feedback">
+            <span class="underline">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus
+              <span id="dots">. </span>
+              <span id="more"
+                >Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem.
+              </span>
+            </span>
+          </p>
+        </div>
+        <button id="btn" class="more"></button>
+
+        <!-- <div class="сustomer-reviews__more dot-group">
+                  <svg width="4" height="4" class="сustomer-reviews__icon--markers">
+                    <use href="./images/symbol-defs.svg#icon-dot-small"></use>
+                  </svg>
+                  <svg width="4" height="4" class="сustomer-reviews__icon--markers">
+                    <use href="./images/symbol-defs.svg#icon-dot-small"></use>
+                  </svg>
+                  <svg width="4" height="4" class="сustomer-reviews__icon--markers">
+                    <use href="./images/symbol-defs.svg#icon-dot-small"></use>
+                  </svg>
+              </div> -->
+
+        <p class="сustomer-reviews__location">Jenny, New York</p>
+      </div>
+    </div>
+    <!-- <svg width="12" height="12" class="home">
+            <use href="./images/symbol-defs.svg#icon-home-grey"></use>
+            </svg> -->
+  </div>
+
+  <!-- <div style="width: 180px;" class="hr"><hr><hr><hr><hr><hr><hr><hr><hr></div> -->
+</section>
+
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 
@@ -277,11 +217,8 @@
 
 <script src="./js/js-context2.js"></script>
 
-<script src="./js/js-context3.js"></script>
+<script src="./js/js-context3.js"></script> -->
 
 <!-- ! -->
 
 <!-- ! -->
-
-  </body>
-</html>
