@@ -157,7 +157,7 @@
     }
   }
   
-  .products_background__icecream {
+  .products__icecream_background {
     background-color: var(--background-pink);
   }
   
@@ -165,7 +165,7 @@
     background-color: var( --cafe-bg-color);
   }
   
-  .products_background__milkshakes {
+  .products__milkshakes_background {
     background-color: var(--food-truck-bg-color);
   }
   
@@ -180,32 +180,32 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     
-    &::after {
-      content: '';
-      border: 1px solid tomato;
-      position: absolute;
-      width: 26px;
-      height: 6px;
-      left: 50%;
-      transform: translate(-50%);
-      bottom: 0%;
-      display: block;
-      text-align: center;
-      width: 26px;
-      height: 6px;
-      text-align: center;
-      // background-image: url('https://img.icons8.com/2266EE/search');
-    }
+    // &::after {
+    //   content: '';
+    //   border: 1px solid tomato;
+    //   position: absolute;
+    //   width: 26px;
+    //   height: 6px;
+    //   left: 50%;
+    //   transform: translate(-50%);
+    //   bottom: 0%;
+    //   display: block;
+    //   text-align: center;
+    //   width: 26px;
+    //   height: 6px;
+    //   text-align: center;
+    //   // background-image: url('https://img.icons8.com/2266EE/search');
+    // }
     @media screen and (min-width: 320px) and (max-width: 767px) {
-      padding-bottom: 30px;
+      // padding-bottom: 30px;
       margin-bottom: 30px;
     }
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-      padding-bottom: 30px;
+      // padding-bottom: 30px;
       margin-bottom: 30px;
     }
     @media screen and (min-width: 1280px) {
-      padding-bottom: 36px;
+      // padding-bottom: 36px;
       margin-bottom: 32px;
     }
   }
@@ -270,4 +270,17 @@
     // }
   }
   
-  
+  .point {
+     margin-bottom: 32px;
+    //  @media screen and (min-width: 320px) and (max-width: 767px) {
+    //   padding-bottom: 30px;
+    //  }
+    // @media screen and (min-width: 768px) and (max-width: 1279px) {
+    //   padding-bottom: 30px;
+    
+    // }
+    // @media screen and (min-width: 1280px) {
+    //   padding-bottom: 36px;
+      
+    // }
+  }
