@@ -7,3 +7,15 @@ $('.slider').slick({
   fade: true,
   cssEase: 'linear'
 });
+
+
+// $('.your').slick();
+
+// jquery(document).ready(function ($) {
+//   $('your').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     dots:
+//       true
+//   })
+// })
