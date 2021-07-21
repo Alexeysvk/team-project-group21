@@ -1,7 +1,30 @@
 <section class="page-header">
   <div class="container nav-container">
-    <a href="#" class="logo">
-      <img src="./images/hero-header/logo-2x-tab.png" alt="page-logo" width="200" height="50" />
+    <a href="#" class="page-logo">
+      <picture>
+            <source
+              srcset="
+                /images/hero-header/logo-1x-desk.png 1x,
+                /images/hero-header/logo-2x-desk.png 2x
+              "
+              media="(min-width: 1280px)" />
+
+            <source
+              srcset="
+                /images/hero-header/logo-1x-tab.png 1x,
+                /images/hero-header/logo-2x-tab.png 2x
+              "
+              media="(min-width: 768px)" />
+              <source
+              srcset="
+                /images/hero-header/logo-1x-mob.png 1x,
+                /images/hero-header/logo-2x-mob.png 2x
+              "
+              media="(min-width: 320px)" />
+
+            <img src="./images/hero-header/logo-2x-tab.png" alt="page-logo" width="200" height="50" loading="lazy" />
+        </picture>
+      
     </a>
     <div class="button-burger">
       <!-- <svg class="menu-button" width="20" height="12">
@@ -25,7 +48,7 @@
       <nav class="navigation">
         <ul class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link nav__link--current">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#howitsmade" class="nav__link">About us</a></li>
           <li class="nav__item"><a href="#howitsmade" class="nav__link">How it’s made?</a></li>
           <li class="nav__item"><a href="#products" class="nav__link">Our products</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</li>
@@ -82,7 +105,7 @@
         <nav>
           <ul class="menu__list">
           <li class="menu__item"><a href="#" class="menu__link menu__link--current">Home</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+          <li class="menu__item"><a href="#howitsmade" class="menu__link">About us</a></li>
           <li class="menu__item"><a href="#howitsmade" class="menu__link">How it’s made?</a></li>
           <li class="menu__item"><a href="#products" class="menu__link">Our products</a></li>
           <li class="menu__item"><a href="#contact" class="menu__link">Contact</li>
@@ -100,10 +123,10 @@
       </h1>
       <ul class="hero-buttons">
         <li class="hero-button__item">
-          <button  class="hero__button hero__button--dark">Products</button>
+          <a href="#products" class="hero__button hero__button--dark">Products</a>
         </li>
         <li class="hero-button__item">
-          <button class="hero__button hero__button--white">How it’s made?</button>
+          <a href="#howitsmade" class="hero__button hero__button--white">How it’s made?</a>
         </li>
       </ul>
       <div class="hero-card">
