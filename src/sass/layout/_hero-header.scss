@@ -452,6 +452,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
+  margin-top: 32px;
 }
 .menu__item {
   @media screen and (max-width: 1279px) {
@@ -473,10 +474,9 @@
   color: var(--title-color);
 }
 .menu__close {
-  position: absolute;
-  left: 80%;
-
-  bottom: 90%;
+  position: fixed;
+  top: 23px;
+  right: 34px;
   background-color: transparent;
   border: none;
 }
