@@ -597,6 +597,10 @@ summary {
   }
 }
 
+.cow-section__button:hover {
+  background-color: var(--white-buttons-hover-color);
+}
+
 .cow-section__icon {
   fill: var(--title-color);
 }
@@ -1526,7 +1530,7 @@ summary {
   width: 100%;
   height: 30px;
   margin-bottom: 12px;
-  padding-top: 30px;
+  margin-top: 30px;
   background-color: transparent;
 }
 
