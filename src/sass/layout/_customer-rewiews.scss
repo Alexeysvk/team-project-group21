@@ -21,11 +21,10 @@
   }
 }
 
-.title {
-  &--hidden {
+.сustomer-reviews {
+  &__title {
     width: 1px;
     height: 1px;
-    // @include size(1px, 1px);
 
     margin: -1px;
     visibility: hidden;
@@ -35,11 +34,14 @@
 
 .slider {
   position: relative;
+  background-color: #ffffff;
 }
 
 .сustomer-reviews {
-  // padding-top: 80px;
-  // padding-bottom: 86px;
+  padding-top: 80px;
+  padding-bottom: 86px;
+  background-color: #ffffff;
+
 
   // @media screen and(min-width:768px) {
   //   padding-bottom: 119px;
@@ -103,7 +105,7 @@
     background-color: #fafafa;
     @media screen and(min-width:768px) {
       width: 620px;
-      height: 164px;
+      // height: 164px;
     }
 
     @media screen and(min-width:1280px) {
@@ -149,10 +151,10 @@
 .underline {
   position: relative;
   z-index: 3;
-  display: inline-block;
-background-size: 100%;
-text-align: center;
-background-image: repeating-linear-gradient(transparent,transparent 29px,#e1e1e1 0,#e1e1e1 30px);
+//   display: inline-block;
+// background-size: 100%;
+// text-align: center;
+// background-image: repeating-linear-gradient(transparent,transparent 29px,#e1e1e1 0,#e1e1e1 30px);
 
   // background-image: repeating-linear-gradient(
   //   to right,
@@ -164,12 +166,12 @@ background-image: repeating-linear-gradient(transparent,transparent 29px,#e1e1e1
   // background-size: 100% 1px;
   // background-position: center bottom 0px;
 
-  // background: repeating-linear-gradient(
-  //     to top,
-  //     #e1e1e1 0 1px,
-  //     transparent 1px 22px
-  //   )
-  //   left/100% 100% no-repeat;
+  background: repeating-linear-gradient(
+      to top,
+      #e1e1e1 0 1px,
+      transparent 1px 22px
+    )
+    left/100% 100% no-repeat;
 
   @media screen and(min-width:768px) {
     margin: auto;
