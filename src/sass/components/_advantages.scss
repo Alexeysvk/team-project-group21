@@ -149,6 +149,7 @@
     justify-content: center;
     align-items: center;
     padding-left: 115px;
+    padding-bottom: 139px;
 
     &__li {
       width: 330px;
@@ -177,7 +178,7 @@
 
     &__p:last-child {
       margin-bottom: 0;
-      padding-bottom: 139px;
+      padding-bottom: 0;
     }
 
     &__img {
