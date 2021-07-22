@@ -31,6 +31,12 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--circle-color);
+  @media screen  and (max-width: 767px) {
+    font-family: Titan One;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+   }
 }
 
 .title {
@@ -43,7 +49,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--title-color);
+  @media screen  and (max-width: 767px) {
+    font-family: Titan One;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+   }
 }
+
 
 .products_list {
    @media screen  and (max-width: 767px) {
