@@ -1511,8 +1511,8 @@ summary {
   border: none;
   width: 100%;
   height: 30px;
+  margin-top: 30px;
   margin-bottom: 12px;
-  padding-top: 30px;
   background-color: transparent;
 }
 
