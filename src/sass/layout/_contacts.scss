@@ -1,6 +1,6 @@
 .contact {
   position: relative;
-  margin-top: 86px;
+  margin-top: 0;
   background: var(--background-milk);
 
   &::after {
@@ -15,17 +15,17 @@
     z-index: 0;
   }
   @media screen and (min-width: 768px) {
-    margin-top: 119px;
+    margin-top: 0;
     &::after {
       height: 78px;
     }
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1300px) {
     background-image: url('/images/contacts/contacts-fon-1x.png');
     background-position-y: 102px;
     background-repeat: no-repeat;
     background-position-x: 0;
-    margin-top: 132px;
+    margin-top: 0;
     &::after {
       height: 102px;
     }
