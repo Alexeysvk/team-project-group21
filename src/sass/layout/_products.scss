@@ -1,6 +1,7 @@
 .products{
   padding-top: 121px;
   padding-bottom: 98px;
+ background-color:var(--text-color-white);
 }
 .products_container{
 
@@ -26,10 +27,18 @@
   padding-bottom: 15px;
   font-family: Titan One;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.167;
   text-align: center;
   text-transform: uppercase;
   color: var(--circle-color);
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.154;
+  }
+  @media screen  and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.133;
+  }
 }
 
 .title {
@@ -37,11 +46,19 @@
   padding-bottom: 31px;
   font-family: Titan One;
   font-size: 34px;
-  line-height: 39px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--title-color);
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.146;
+  }
+  @media screen  and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.138;
+  }
 }
 
 .products_list {
@@ -161,7 +178,7 @@
     background-color: var(--background-pink);
   }
   
-  .products_background__icecoffee {
+  .products__icecoffee__background {
     background-color: var( --cafe-bg-color);
   }
   
@@ -181,8 +198,7 @@
     text-transform: uppercase;
     
     // &::after {
-    //   content: '';
-    //   border: 1px solid tomato;
+    //   content: '...';
     //   position: absolute;
     //   width: 26px;
     //   height: 6px;
@@ -194,7 +210,6 @@
     //   width: 26px;
     //   height: 6px;
     //   text-align: center;
-    //   // background-image: url('https://img.icons8.com/2266EE/search');
     // }
     @media screen and (min-width: 320px) and (max-width: 767px) {
       // padding-bottom: 30px;
@@ -271,16 +286,21 @@
   }
   
   .point {
-     margin-bottom: 32px;
-    //  @media screen and (min-width: 320px) and (max-width: 767px) {
-    //   padding-bottom: 30px;
-    //  }
-    // @media screen and (min-width: 768px) and (max-width: 1279px) {
-    //   padding-bottom: 30px;
+     margin-bottom: 30px;
+     @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-bottom: 30px;
+     }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin-bottom: 32px;
     
-    // }
-    // @media screen and (min-width: 1280px) {
-    //   padding-bottom: 36px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 32px;
       
-    // }
+    }
   }
+
+.arrow_icon {
+  color: red;
+  fill: red;
+}
