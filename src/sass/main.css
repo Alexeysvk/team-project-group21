@@ -1415,6 +1415,12 @@ summary {
   background-color: #fafafa;
 }
 
+@media screen and (min-width: 320px) {
+  .сustomer-reviews__wrapper {
+    width: 280px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .сustomer-reviews__wrapper {
     width: 620px;
@@ -1431,6 +1437,13 @@ summary {
 .сustomer-reviews__feedback {
   position: relative;
   margin: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .сustomer-reviews__feedback {
+    padding: 0;
+    background-color: inherit;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1477,9 +1490,15 @@ summary {
   background-repeat: repeat-x;
   height: 40px;
   width: 54px;
-  position: absolute;
-  top: 25px;
-  left: 60px;
+  position: relative;
+  top: 22px;
+  left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .сustomer-reviews__feedback::before {
+    left: 0;
+  }
 }
 
 #more {
@@ -1492,8 +1511,8 @@ summary {
   border: none;
   width: 100%;
   height: 30px;
+  margin-bottom: 12px;
   padding-top: 30px;
-  padding-bottom: 12px;
   background-color: transparent;
 }
 
@@ -1507,12 +1526,11 @@ summary {
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
 }
 
 .more:hover::before {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1530,7 +1548,7 @@ summary {
 
 .slick-dots li button::before {
   font-family: "slick";
-  font-size: 6px;
+  font-size: 12px;
   line-height: 20px;
   position: absolute;
   top: 0;
@@ -1544,28 +1562,27 @@ summary {
 
 .slick-slide li:first-child {
   font-family: "slick";
-  font-size: 6px;
+  font-size: 12px;
   line-height: 20px;
   position: absolute;
   top: 0;
   left: 0;
   width: 20px;
   height: 20px;
+  content: "•";
   text-align: center;
   color: #d31342;
   content: "";
   background-image: url("../images/icons/home.svg");
-  width: 12px;
-  height: 12px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .slick-dots li:nth-child(1) button {
-  width: 12px;
-  height: 12px;
-  background-image: url("../images/icons/home-grey.svg");
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/icons/home.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1576,8 +1593,8 @@ summary {
 }
 
 .slick-dots li:nth-child(1) button:hover {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   background-image: url("../images/icons/home.svg");
   background-repeat: no-repeat;
   background-size: cover;

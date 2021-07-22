@@ -42,14 +42,6 @@
   padding-bottom: 86px;
   background-color: #ffffff;
 
-
-  // @media screen and(min-width:768px) {
-  //   padding-bottom: 119px;
-  // }
-
-  // @media screen and(min-width:1280px) {
-  //   padding-bottom: 132px;
-  // }
   &__list {
     text-align: center;
   }
@@ -65,13 +57,15 @@
   margin-bottom: 29px;
 }
 
-.customer-reviews__img {
-  width: 85px;
-  height: 85px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
+.customer-reviews{
+  &__img {
+    width: 85px;
+    height: 85px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
 }
 
 .quotes-wrapper {
@@ -79,21 +73,10 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  // position: relative;
+ 
 }
 
-// .сustomer-reviews__icon--quotes {
-//   position: absolute;
-//   top: 28px;
-//   left: 61px;
-//   z-index: 1;
-//   @media screen and(min-width:768px) {
-//     left: 95px;
-//   }
-//   @media screen and(min-width:1280px) {
-//     left: 196px;
-//   }
-// }
+
 
 .сustomer-reviews {
   &__wrapper {
@@ -103,9 +86,13 @@
     text-align: center;
 
     background-color: #fafafa;
+    @media screen and(min-width:320px) {
+      width: 280px;
+   
+    }
     @media screen and(min-width:768px) {
       width: 620px;
-      // height: 164px;
+   
     }
 
     @media screen and(min-width:1280px) {
@@ -119,8 +106,11 @@
   &__feedback {
     position: relative;
     margin: 0;
-    // padding: 40px 60px 20px;
-    // padding: 43px 66px 26px 57px;
+
+    @media screen and(min-width:320px) {
+      padding: 0;
+      background-color: inherit;
+    }
 
     @media screen and(min-width:768px) {
       padding: 47px 80px 34px 80px;
@@ -136,7 +126,7 @@
 
 .сustomer-reviews__location {
   text-align: center;
-  // margin-top: 12px;
+
   margin-bottom: 30px;
   position: relative;
 }
@@ -176,23 +166,9 @@
   @media screen and(min-width:768px) {
     margin: auto;
     width: 460px;
-    // height: 83px;
+   
   }
 }
-
-// .underline {
-
-// }
-// !
-// !
-// !
-
-// .picture-wrapper::after {
-//   contain: "";
-//   background-size: contain;
-//   background-position: center;
-//   background-repeat: repeat-x;
-// }
 
 .сustomer-reviews__feedback::before {
   display: block;
@@ -200,57 +176,21 @@
   // background-image: url(/images/quotes.svg);
   background-image: url(../images/icons/quotes.svg);
   background-size: contain;
-  // background-position: center;
+
   background-repeat: repeat-x;
-  // background-size: 28px 28px;
+ 
   height: 40px;
   width: 54px;
-  position: absolute;
-  top: 25px;
-  left: 60px;
+  position: relative;
+  top: 22px;
+  left: 0px;
+  @media screen and(min-width:768px){
+    left: 0;
+  }
 }
 
-// .underline::after {
-//   display: block;
-//   content: " ";
-//   background-image: url("../images/markers.svg");
-//   // background-size: 4px 4px;
-//   height: 4px;
-//   width: 32px;
-//   background-position: center;
-//   margin: auto;
-// }
 
-// !
-// .сustomer-reviews__location::before {
-//   display: block;
-//   content: " ";
-//   background-image: url("../images/markers.svg");
-//   height: 4px;
-//   width: 32px;
-//   background-position: center;
-//   // margin-top: 30px;
-//   margin-bottom: 12px;
-//   margin-left: auto;
-//   margin-right: auto;
 
-//   cursor: pointer;
-//   // position: relative;
-// }
-
-// .сustomer-reviews__location:hover::before {
-//   // background-color: tomato;
-//   transform: scale(1.3) translateX(0px);
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   visibility: visible;
-// }
-
-// .сustomer-reviews__location::before::hover {
-//   transform: scale(1.5) translateX(15px);
-// }
-
-//!
 
 #more {
   display: none;
@@ -258,18 +198,15 @@
 .more {
   display: block;
   margin: auto;
-  // position: absolute;
-  // bottom: 88px;
-  // left: 365px;
-  // bottom: 234px;
-  // left: 382px;
-  // visibility: hidden;
+
   border: none;
   width: 100%;
   height: 30px;
-  // opacity: 0.1;
+
+  // padding-top: 30px;
+  // padding-bottom: 12px;
+  margin-bottom: 12px;
   padding-top: 30px;
-  padding-bottom: 12px;
   background-color: transparent;
 }
 
@@ -280,18 +217,17 @@
   height: 4px;
   width: 32px;
   background-position: center;
-  // margin-top: 30px;
+
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
 
-  cursor: pointer;
-  // position: relative;
+
 }
 
 .more:hover::before {
-  transform: scale(1.3);
-  // transform: rotate(0.5turn);
+  transform: scale(1.4);
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -301,13 +237,15 @@
 
 // !
 .slick-dots li.slick-active button:before {
-  // opacity: 0.75;
+ 
   color: #d31342;
 }
 
+
+
 .slick-dots li button::before {
   font-family: "slick";
-  font-size: 6px;
+  font-size: 12px;
   line-height: 20px;
   position: absolute;
   top: 0;
@@ -316,56 +254,35 @@
   height: 20px;
   content: "•";
   text-align: center;
-  // opacity: 0.25;
+
   color: #d9d9d9;
 }
 
-// .slick-dots li button:first-child::before {
-//   font-family: "slick";
-//   font-size: 6px;
-//   line-height: 20px;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 20px;
-//   height: 20px;
-//   // content: "•";
-//   text-align: center;
-//   color: #d31342;
-//   content: "";
-//   background-image: url("../images/home.svg");
-//   width: 12px;
-//   height: 12px;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
-// }
-
 .slick-slide li:first-child {
   font-family: "slick";
-  font-size: 6px;
+  font-size: 12px;
   line-height: 20px;
   position: absolute;
   top: 0;
   left: 0;
   width: 20px;
   height: 20px;
-  // content: "•";
+  content: "•";
   text-align: center;
   color: #d31342;
   content: "";
   background-image: url("../images/icons/home.svg");
-  width: 12px;
-  height: 12px;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .slick-dots li:nth-child(1) button {
-  width: 12px;
-  height: 12px;
-  background-image: url("../images/icons/home-grey.svg");
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/icons/home.svg");
+  // background-image: url("../images/icons/home-grey.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -376,33 +293,11 @@
 }
 
 .slick-dots li:nth-child(1) button:hover {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   background-image: url("../images/icons/home.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-// .home {
-//   width: 12px;
-//   height: 12px;
-//   fill: #d9d9d9;
-//   stroke: #d9d9d9;
-//   position: absolute;
-//   bottom: 10%;
-//   // top: 5px;
-//   left: 20%;
-//   // right: 5px;
-// }
-
-// .home:hover {
-//   fill: #d31342;
-//   stroke: #d31342;
-// }
-
-// svg path {
-//   stroke: inherit;
-//   stroke-width: inherit;
-//   fill: inherit;
-// }
