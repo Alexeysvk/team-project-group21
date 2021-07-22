@@ -1,14 +1,9 @@
 .cow-cont {
   padding: 0;
 }
-.cow-section {
-  padding-top: 125px;
+
+.cow {
   background-color: var(--background-milk);
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-top: 130px;
-  }
-
   @media screen and (max-width: 767px) {
     display: block;
     background-image: url(../images/about/milk-bg_480px_1x-min.png);
@@ -20,7 +15,7 @@
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .cow-section {
+    .cow {
       background-image: url(../images/about/milk-bg_480px_2x-min.png);
     }
   }
@@ -28,16 +23,23 @@
   @media screen and (min-width: 1280px) {
     background-image: url(../images/about/milk-bg_1280px_1x-min.png);
     background-repeat: no-repeat;
-    background-position: left 0 top 415px;
+    background-position: 50% 100%;
     background-size: contain;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
     screen and (min-resolution: 192dpi) and (min-width: 1280px),
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-    .cow-section {
+    .cow {
       background-image: url(../images/about/milk-bg_1280px_2x-min.png);
     }
+  }
+}
+.cow-section {
+  padding-top: 125px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 130px;
   }
 }
 
@@ -178,6 +180,9 @@
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 1.31px;
+  }
+  &:hover {
+    background-color: var(--white-buttons-hover-color);
   }
 }
 
