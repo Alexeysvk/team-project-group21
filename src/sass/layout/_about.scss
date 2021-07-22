@@ -181,6 +181,9 @@
     font-size: 16px;
     line-height: 1.31px;
   }
+  &:hover {
+    background-color: var(--white-buttons-hover-color);
+  }
 }
 
 .cow-section__icon {

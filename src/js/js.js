@@ -1,5 +1,3 @@
-// $('.slider').slick();
-  
 $('.slider').slick({
   dots: true,
   infinite: true,
@@ -7,6 +5,10 @@ $('.slider').slick({
   fade: true,
   cssEase: 'linear'
 });
+
+
+// $('.slider').slick();
+  
 
 
 // $('.your').slick();
