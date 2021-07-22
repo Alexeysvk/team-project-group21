@@ -1704,6 +1704,7 @@ summary {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 46px;
+  padding-top: 1px;
 }
 
 .footer__list > li:not(:first-child) {
