@@ -79,9 +79,9 @@
   &:last-child {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-  }
+  
   @media screen and (min-width: 768px) {
+    padding: 50px 31px;
     margin-bottom: 0;
     flex-basis: calc((100% - 40px) / 3);
     width: 100%;
@@ -90,9 +90,9 @@
     &:last-child {
       margin-bottom: 0;
     }
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-    }
+   
     @media screen and (min-width: 768px) {
+      padding: 52px 43px;
       margin-bottom: 0;
       flex-basis: calc((100% - 40px) / 3);
       width: 100%;
@@ -109,11 +109,10 @@
       margin-right: 31px;
     }
   }
-  .card__separator {
-    height: 1px;
-    background: var(--contacts-separator);
-    margin-top: 25px;
-    margin-bottom: 25px;
+  .separator {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 32px;
   }
   .card__title {
     text-align: center;
@@ -121,14 +120,13 @@
     font-weight: 500;
     font-size: 12px;
     color: var(--text-color-white);
-    height: 16px;
-    width: 80px;
+    padding: 1px 0;    width: 80px;
     background: var(--cafe-bg-color);
     border-radius: 4px;
     margin-bottom: 25px;
     @media screen and (min-width: 768px) {
       font-size: 16px;
-      line-height: 30px;
+      line-height: 28px;
       height: 28px;
       width: 73px;
     }
@@ -139,7 +137,7 @@
     font-weight: 500;
     font-size: 12px;
     color: var(--text-color-white);
-    height: 16px;
+padding: 1px 0;
     width: 130px;
     background: var(--food-truck-bg-color);
     border-radius: 4px;
@@ -154,7 +152,8 @@
   .card__name {
     font-weight: 500;
     font-size: 12px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 26px;
@@ -267,7 +266,7 @@
   }
 }
 .locations {
-  padding-bottom: 150px;
+  padding-bottom: 113px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 158px;
@@ -277,7 +276,7 @@
     align-items: center;
   }
   @media screen and (min-width: 1280px) {
-    padding-bottom: 80px;
+    padding-bottom: 165px;
   }
 }
 .locations__button {
@@ -293,12 +292,12 @@
   font-style: normal;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
-    margin: 0 15px 0 0;
+    margin:0;
     width: 191px;
   }
   @media screen and (min-width: 1280px) {
     width: 198px;
-    margin: 0 15px 0 0;
+    margin:  0;
   }
 }
 .locations__button-dark {
@@ -307,6 +306,7 @@
   color: var(--text-color-white);
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+    margin-right: 15px;
     &:hover{
       background: var(--footer-dark-button);
     }
@@ -328,7 +328,9 @@
 .locations__icon-white {
   color: mintcream;
 margin-left: 14px;
-
+&:last-child {
+  margin-right: 0;
+}
 }
 .locations__icon-red {
   fill: white;
